@@ -2,14 +2,37 @@
 <html>
     <head>
         <title>String Comparator </title>
-        <style></style>
+        <style>
+            h1,h2{
+                text-align: center;
+            }
+            .app_container{
+                display: flex;
+                align-content: space-around;
+                align-items: center;
+                
+            }
+            .text_style{
+              
+                width: 300px;
+                height: 100px;
+                text-align:start;
+                margin-left: 15%;
+                margin-right: 0%;
+                padding: 20px 30px;
+                border-radius: 2px;
+                background-color: #5dbea3;
+
+            }
+        </style>
     </head>
     <body>
         <h1>String Comparator </h1>
-        <h2>Here, Enter text and check text matches.Let's,Go 🙂👍 </h2>
-        <div>
-        <input type="text" id="text1"/>
-        <input type="text" id="text2"/>
+        <h2>Here, check text matches or not. Let's,Go 🙂👍 </h2>
+        <br/>
+        <div class="app_container">
+        <input type="text" id="text1" class="text_style" placeholder="Enter text 1 here .."/>
+        <input type="text" id="text2" class="text_style" placeholder="Enter text 2 here .."/>
         <p class="match_text" id="match_result"></p>
     </div>
     </body>
