@@ -3,16 +3,62 @@
     <head>
          <title>Sum Calculator</title>
          <style>
+            h1,h2{
+                 text-align: center;
+            }
+            .app_container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid grey;
+                background-color: #5dbea3;
+                margin-left: 30%;
+                margin-right: 30%;
+                
+            }
+            .text_style{
+                width: fit-content;
+                margin: 10px auto;
+                padding:10px;
+                border-radius: 2px;
+
+            }
+            p{
+               
+                font-weight: bold;
+                font-size: larger;
+                margin-left: 0px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            .btn_action{
+                margin: 10px;
+                padding: 20x 20px;
+                border-radius: 15px;
+                width: 200px;
+                font-size: 18px;
+                background-color: rgb(39, 136, 104);
+                
+            }
+            .btn_action:hover{
+                box-shadow: 0 0 2px 2px grey;
+            }
+
 
          </style>
     </head>
     <body>
-        
-        <input type="text" id="text_num1"  placeholder="Enter number 1 here"/> <br/>
-        <input type="text" id="text_num2"  placeholder="Enter number 2 here"/> <br/>
-        <p id="text_sum">Sum of given Numbers is : </p> <br/>
-        <button type="button" onclick="calculateSum()">Calculate Sum</button>
-        <button type="button" onclick="resetSum()">Reset Sum</button>
+      <h1>Sum Calculator</h1>
+      <h2>Enjoy The Game of Numbers 🙂👍</h2>
+      <br/> 
+      <div class="app_container">
+        <input type="text" id="text_num1"  placeholder="Enter number 1 here ..." class="text_style"/> <br/>
+        <input type="text" id="text_num2"  placeholder="Enter number 2 here ... " class="text_style"/> <br/>
+        <p id="text_sum">Sum of Numbers is : </p> <br/>
+        <button type="button" onclick="calculateSum()" class="btn_action">Calculate Sum</button>
+        <button type="button" onclick="resetSum()"class="btn_action">Reset Sum</button>
+    </div>
 
 
 
